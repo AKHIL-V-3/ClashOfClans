@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wendy+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon"
+        href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAQERUPEBAQFRUXFRUVEBUWFRUVFhUVFRUWFxUVFhUYHSggGBolGxUWITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGy0mICUtLSsvKystLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAAAQIDBQYEBwj/xABCEAABAwIEAwYBCQcDAwUAAAABAAIDBBEFEiExQVFhBhMicYGRMhQjQlJicqGxwQczQ4LR4fA0kqJTssIVFhckdP/EABsBAAICAwEAAAAAAAAAAAAAAAABAgUDBAYH/8QANREAAgEDAgMFBwIGAwAAAAAAAAECAwQRITEFEkETIlFhcYGRobHB0fAy4QYjM0Jy8RQVUv/aAAwDAQACEQMRAD8A13b/ALbPp3GkpiBIB87JoclxcNaDpmtrc7ee3mNXWSynNLJI883uLj+JRXVLpZXyu3e9zz5uJP6rnXR0KEKUEkterOcuLiVWTbenRAhCFnNcEJUiABCEIAEIRZAAhLZOsmAxCfZFkCGWQn2RZADEJ9klkANQlskQMEIQkAJUiEACEIQBJBO+M5o3vYeBa4tPuF6J2F7dSGRtLWOzhxDYpT8QcdmuP0gdr733vfTzdCxVaEKseWS9vVGalXnSlmL9nRn0yheOf/I1UhU//AreRdf8+h4v3GJQhCvTnwQhCABCVIgAS2QAn2TASyWyLJbJiCySydZLZADbIsnWS2QAyyLJ9kWQBHZFk+ySyAG2SWT7JLIAjskUhCQhIBiEtkiBghCEgBCEIAEIQgAQhCABCEIAAngIATgExCAJQEAJwCYCAJwCUBKAgQlkJSuvBMboYn2n0fwc8eEeR2HqsNxXVGHM1kz29B1p8qeBlPQTSfBE93k0lSS4TVMF3U1QBxPdPt72XpGFVsUoBje1w4WIPtZaOjFtlVvilXOkV8fuWi4XTxrJ/D7Hg4I290tl7tjOBUtU21RC1xto8C0jfuvGq8j7U9n30EoaXF8T7mGTnbdrgNnC489/Lbtr+NV8slh/BmncWEqacovK+P2ZSpLKSyLKxwaBFZIQpLJtkgGEJpCkITSEgGkJhCkISEJDI0JSEiBipEISAEIQgAQlSIAE4BIE8JgKAlASBOATEKAlAQAngJpCABLZACcApEcjbLnqaBkg8TQuwBLZJxTWGNScdUZ7/wBIlgPeUk0kTt/CTY+Y4r2f9lGJVFRRZ6l4dI2RzSbAXA20C83kGhXpf7L6F8NHd+nePdI0fZNgL+drql4hb06aUorGX9C64dcVKjcZPOF9TaTO0WR7dUwlpHgjVhbI3oQbO/4krUSuWL7d1vgFMDrJfN9zj77e6q2Wh5vHxHIkeyWySOMtcWnfT+h/EKQhdVRnz04y8UjlK0OSpKPg2R2RZOISELKYyMhNIUpCaQokiMhNITyE0hIBpTCnkJCkMYhBQkMEIQgAQEJQmA4JQgJwTEKAnAICcAmIUBKAlCcApCYAKP5YyKWISAZHSNY+/AO8N+mpCmAVZj9J3kRHRYrhN0pKO+DJbuKqxctsm3rOyj/ihdf7J39Hf1VDPTPjdkewtdyI38ua2H7P8eFbRse4jvWfNzjjnb9L+YWPqUvbGLMKf/8AVH/2vP6KlpcSqwWJd75+9b/PzLqtw2lN5j3fTb3Pb2aeRQYTgZmkYx+mY6gcGjVxv5fiQvVqdoaA1osAAABwA0AWb7N0wAM31tGfcB39Tr5Bqua+ubBE+Z5sGtJPoFqVq860uab+xt0aEKMeWC+7O57rC59V5e+qNZVPm+jfLH9xug99/VU1L2vxKqdJBHd7X5hkABc1ruDeJ00vqrzs+Y4ZO5lIZIPouI/MaLFgylV2ipu7qL8HDMP888y4bLV9taP5pkw+i6x8j/hWVC6Hhs+ajjwePqc9xKHLWz4rP0EITCFIQkIW8aBEQkITyE0hAyMhNIUpTCokiMppTyEwpDGFInlMSGCEISAE8JqeExAE8JoTwmA4J4TApApIQBPCaFIEyIBD2XFkoCeExFHQYjLhVV8ojaXRvsKiMfSaNiPtC5t6jit5VY9DiElJFSvD88jpXkbxRxxuDi4fRdme0AFZqopmvFiFVUMdTh8rpqPIC4WdmYHXF725j0VLeWEsudP3F1Z38WlCp7z3OmaAAALAAADkBsFgv2r42Q1tGwm7rOf5cB6n8lWYZ+02pjIbV0sZ5ujL2/8AHxKbth20oqyFkMbGmUkHM/L8237LgdSdre4VW4Si9UWanGS0ZB2Iw2OFr62oje3uxdua1nk7WYQCfe2ipqKGXFK8Aue4Zs2bXRoO2u3kr7DsHnqYO4jne1h1DL3Z7HZav9nXZM0TXmWxkc61/s8LKOSRdVmDtfTupwNMlm+Y2/FeXOidG50bwQ5ps4HfRbPtP+0RlLO6lp6fvnMNpnuf3bGu3LG2aS4jjsAdNbFcsk9NjLDJAO5rGC74XEXc0cnfTbt4uF7EBbllddhPvbPfy8zTvbV14d3dbfYyhCaQnvaWkscC1wNnA7gppXRpprKOcaaeGNITCnlNKAIymlPKQpEkRFMKlKjKiMaUwqQqMpDEQhCBip4TApAgQoTgmhSBMQ4JQgJQpkWd2D4c6pmZCzTMfEeDWjVzj5BbJ2F0MPhFMJLaF8j33PWzSAPZHZqg+S03euFpZgCObY92jzPxeyjnK4bjvGq3bujbTcVHRtPGX19i2951vCOF0+y7WtFNy2T6IcafDjvRDzbJKP8AyUTsGw+T4TNCepD2/iL/AIqWCO6t6emBFrD1VJT45xCD7tWT9dfnksavDLJrWkvZoZ2fsbIdYJopBwBOV343b+Koa2glhdkmjcw/aG/kdj6LazUWQ3jcWHpsnjE3hvd1EbZGcbgOHsVd2f8AF1WLUbmCa8Y6P3N4ZV3H8PU5LNCWH4PX9/ieevpmu3AXFUYJE/doW/q+z8E930jwx3/ScfCfuuOrfW46hZqop3xuLJGlrhoQRYhdfaXlrfQ5qTT8V1Xqnqc7cW9xaT5aia8+j/PMz9Nh9RSnPSVEsR5NPh9WG7T6hbjsb29eZG0uIBjXuIEUzRlY93Brxs1x4EaHbTS9HZceIULZWlpCjX4dTmm4rDMlDiNSDSk8o7O3eAupqqSbeOZ7pGO5OcbvYeoNyOY8isk6pfG9ssT3Me03Y9uhaeY/odDsVvezWONqIzhOIEuJFqeUnV9vhBcf4jeB4/niO1GFSUcxhk1G8b+D28COvMcCufnCUJOMtzoITjOKlHY1+H4tFi7crskVcxuoGjJ2j6Tf1G46jVVkjHNcWPBDhoQV5+6ZzXB7HOa5pzMc02LSNiDwK9DwTHo8TaIZ8rKto8D9mzAfrzHqOS2rO9dB8r1j8vNfnuNS8slWXNHSXz8n9PqQlNKlljcxxY8WI3UZXQxkpJOLyjn5RcXyyWGhhTCnlNKYIjKYU8phUBjCkKcU0oGNQhCiMApAowpAmIUKQKMJ4TESBX3Y7B/lM93j5qOz5eR+qz1P4ArqwbAoWwtqKsOd3n7qNri3wj6biBfXgFpsMdDDTEQRuYHPdcF2Yl1gLg22A091ScV4zTtqU40339l4Jvz8vmXFjwmrVlCpUXcevm/9/IdiEpe8n2Va8armmrZnEtijc/61gT6XGgUbMS7t2WaJ7DwuDY9AToT0BXnfZzxnB2mi0LWkZrrorpjg0dVwUL2SNu0gjp/ROqHFnxat4Hl0KxJta4MUu88D5ZQVyy2TJXADMTccLcSdgOt0jwRuoeZJI55WAHMNDzGiV88dUBBUmzhpFMBq0/VdzaoKl6qp3aratLirb1VVpSxJdfv4ryCtb069N06iymQVtI+F7opBZzTY/oRzBXMVd9ppsxhDvjbAzOeOpLmg9cpHuqMleu2lZ16EKrWHJJ48Mnm1zRVGtOmnnlbWfQ4cSohI3kRqCNCCNiDwKs6KrZicBoKw2qGC8UnF1tnjrwcOO/lCVWYjSE2kjJa9pzMcNwQte9tFWjlbo2bK7dGWHszG4th8tNK6GZtnNPoRwc08QVzRtNwQSCCCCDYgjYgjY9V6RO2PF4Mrw1lVEPL16sd+B/HEGjcxxY9pa5ps4HgVzjTTwzo001lGvwXGxWtEFSQ2cC0Umwl6Hk7px3HEKSSB4cWFpzDgAT+SocGwV9S8RssNszibBo587+S9mw7CWQsb43OeGhpkJs8+ZCy0eIStXjdPp9fIw1uHq6Wdmuu/sx1PMXgg2IIPI6H2TCvScWxSNoyz91I0cJAHW8nHUe6yE1JT1WZ1CHZ26uhvnzDnEdyRxbqeSs7bjFGtLlknF+eq95X3XBLijB1I95Lw0fuKIppT5GkEgggjQgixB5EJhVo0VIwppTimlIY1CEJDAJ4TmU0h2jkPk1x/RdMWE1LvhgmPkx5/RJtLcai3sjmCkijLiGt3JAHmTYK0Z2WryL/JJvVtvzT6DCKmKeJ0kErQJGEktdYWeNSbWQqkejWfUHSn1Tx6M2OL0pMrIGbMDI28g1jQLn0BKfUHZjBxEcQPF3M9ALuPkV34g5rHyFur3OLb8trge418+S5sKs+V7txE0Nb96QkvPnZo/wBxXmNzLtqyp58W/wA/Nz0SOIxWOiSR0w0wiYGN2HuTxJ6lVlRSSTPMLGB5Iu4G2UNOnivw/P0KuZtlzU0vdOLg6ziADcbgXt10ufdbEFHmSYoykotx3MhilDVYU5sjywRvNmhsmax3tYgEj3tz4K1o8fbM3cXtqNP8I6o7UYYzEZI3vDS6MODTndazt7saDc+yq4OxMcLR/wDZmBuSLFodY24EEN49TfUbKN1aUaneg8MKTqPSotSwFUHVEcTLWF5Xg7AM+E/7yCPurukk528wVmMTiFCTUMzOaQGzlzruGvgOumW5IsLWJ6p8HaOFw3t6tP6qsq2047LKM7xks6m3NQ4fTCSVrXaNvd55Nbq4+wK4xiUT9nBWFLJlp6iQa+FrGnkZXZT/AMQVls7Z1q8KL/uaXse/wyYrmuqNGdX/AMpsqq+rM0r5T9InTkOA9BYei5SUl0l16/hLRbHmOW9WOKY5KSmkoGcRw6odK2Sja50w1a1v0hxBvpl530Vj2iwieVrZX0crJbDNZ8DwRxByyEm3A2XXhlW6BkszRuBGDbbMbn8guygrrC7tbjcrkuL3ChccsUtEjruD2rqW3PJvdlF2Z+aJuC1x3voRbgtDPjczyKeEgvdxOzW8XuWax2YxvMjAT4XF9raBouXG/IK27LwujZ3j/wB5JZ0nNo+hH6A69SVSyzLvPqdBFRiuVdDS0fZanAD5h37zu6TUX+zH8IHueqfWUTWaxjL93QD0Cmpa/S5cFSYn2hLyYqdhkcNyLZW/ecdAjmysEUpN5bGYnSNqvC4jvwPmncZLbRv5k/Rdz08sY5WslDU5s75Wg3vpc28ibKXtDS5rVTBo82nts2XUk9A8eIdcw4LoeD3jf8ib/wAfqvqjm+N2Cj/Pgv8AL6P7+woSkKUpCr850YhCEhnrlNi8n1yrOLF5fr/kspTOKtYH6LzzmaPRZ04+Bd/L3HclP+X20vf8VSvmsqjtPjQgAijIz6Okd9Vo1sep/LzWvUruLS6kVSR14nUjM5wAtc2tzJOvqST6puCSGKAyfSleXN+6AGtPs2/qocOa6rp2TtblbKXZTfVrA4tL/Xh6KWoeNSNGtFmjk1osAtCXPSbct3/t/EzYi4pL8wSCQHV5v5p4iDtY3C/Le/od1kKyqmqJRTwPDNfG/S/k2+3U68ua6JuzmK074zTzNnLgTJHISwMtbXvC47k20A9tslOwqTjzppGKpWjB4Za1tdLADlhLmkkvyOs4EncNI8Q9dANLpafEWObmsHA+648L7RsnLoJmmOdhIlidbO0jc8nt1BzC+hHNR1dI25fGQ0n4tLtd5t/UWPVSjcTpy7OstV+fjRswnFrPyEfepjkpX2AkaQ0kXyOGrHejg1Q9muwET5pamrMQY/OSyPJG1ri0tHdtZYMAvm4atGm6Y5lTmGV1OGC12NjcwkjYmQucT5bKwge9ukrMwP0mk2B6W3t12VlbXijFxjh595q3VqriaqZcWvDr6/sZqlwV7b59mhxLtiA0E36GwVvNI6Olih1vIBNKeBGrYwOgGY+buit6umY6mcB8Ty2NltyXnUf7Q5U/aCQd73LBZkLe6j6hpIc49S7MfVWnAaSq3XaSX6Fn0b0Xt3Kn+IK/Lb8if6nj1S1f0OC6Lpl0XXa5OMHEphKS6noaKSd4jiY5xJA0BIF+LjwHVJvTLDrhHfhcbpoJ6YkMjyiV0rvhiczUF3GzrWsNeNjZYF3at0YyscTwGmnueC1fbTEMrRQQAiBhtI+1u/lHxOJ4t00C86rKYNkAA4XHquLvatK5rucVp88dX9PLc7ewo1bahGnJ5fyz0X5vsXFJjFR3ofO7NFIWslboGtZmGoHTW/MX6Lcx1wbmzb3KxcFGXMsdypsFnEMwhrC/uHeEPBsY77En6nDotNrnwl0LLCpZk86+8vxXvq5fk8byxoGaZ43ay4Fm/aJIA9+C0tFEyNoZG0NaPhA67kk6lx4k6lcmM9nxRxmemb80cpktqW2+kXbuab3vw8lTP7S2HhbrwKx1IOLwSp1VUXMjTVwba535dOq5aEtf3lOfhlYWDo8eKN3o4D3KyD8Yle6zQ57jwaC4/wBh1Kt8Kp5Ll0wLDbwgOBdc8dDpYKdHtIyUo9Gvn+Mx1+zcHCb3T0Ke6YV2V9C6LXdvPl58lxFdvSqxqx5o7HA1KUqUuWe4JUiFMjk9HhsQCF3x9FUYbJcEK0jNgvPcHosxk0lisPW9nJpy9r3va3MbG4Jdrv8A3K1VRISU9p0uoJtPKJ40wXz4mU1MynZtHGyJvM2aLk9d1mMcqu7iDR8TtvyF+nE9AVd1kpfkb0ufW1vwA91je0rXVEj4oyfhMbCATYuBBdpyaH/7gtFrt7lR6fb9yMMQjl+phKqqOcyMuXOuyDyJy94eupI6yK0ou2NfRasldI0AMDJLva7LoXc2gfCLEbea5afCHOklkkGRkJ7pnocot1te3Vw5J01JcZrcgByHABXUpJYQoU+0TbN1h3aqgxKEQTZaea9g15teR38RkmnE31sdgFLiWC1dOB3JdUi9iH5Gvy2JzZmgDkNjuF5ZPheYF2xva/8AVaGm7T1dEImQSudFGC2YSDO1xNjZgOrd7AAjbzKjOnCosNZ9TBKjOlrF/Y0tHiTHudHq2Rps+N2jmn9V3tnLfLiOf91lcdxyOudDJTscyS7xrsLtLnHk67mt9lbUlb3sTZACA5oOvUBVN1aqk047fFGejVcl3i1psSaJ2A3LInCR3V7h4AOoFyfNTHAqaY/NVTmuJvaQAgk83Nt+RWVxOtAeGC2gBf520B8h+a7sDqC59zsPzVlY3tzbLmpvGcaYX549epG64bbXUV2q1Wca7ZJMWweelI71mh+F4Nwel+B6GxXBdb6jxQgZHWc0ixa6xBHKxXFV9i++tLRva1p+JjifCfskAkjofddVY8bp1u7V7svHozkb/glWh3qXej8V9zGErWsgqXUffEvijjYPm3nLHI1o1exo1LiBc5gb3JB4LtpMKpaEXlyzzjnrGw+XE9Tr5Kl7T4lWVF2RxktIIJzNGhGoa2+i0uK8Uo1F2MFnzzhL08fab/COEVovtaj5U1t19u5mO0dSx8Y2vmuy2t9AD6b+6zVXAZGhzfjZqPtDiPNFRmY9zHghzSQQeBGhT4nG4AvfhbdVSyi2jFpYbOnBq9rtDvsRyWoZRRTixAWLnpw852HK/nwd5j9V14bjz4DllaR14HyKi4Z1ibMKmmJHoXZbG/krhh9Ufm3eGmkdtr/BeTw+r7clRds+zIp3GWLN3ROoH8Mnh93ly2XPiOJ09TEWuIvbRSdn+1WcfIqpwc62WKQ69436jvtW48fPfPTmp92SNKtTlSfNB4yRY3N8liZBTNDHv3cNwABmcTxdc2uVmTg5+PO/P9bMc1/vbrX47RFxZK0E5QWkDU2OxVSXK+sKFOdPLWX8jnL+4qwqYTwvmdvZbEJJA+nnOZzACHHdzDpZ3Mjn1C46mPJI+PkdPI6j8CrXs9h5bmqHCxeA2MHctBuXeRNgPIqnqZxJNI8bZrD+UBv6JWvcuZwht9h3eZ28Zy3EQlQrYq8G3oTZWjXGyqKfRW0J8K88R6RM5Zd13YY0avcLhovbmb6f50XBJupGVOVjhzt+BWKrzdm+Xf8APoJk1ZV5GPlJ11t5lVPZxzGsgqnjMJHStefq948NjPlaNo/mXHjdSZI7NJsbjNy52HPVdWC1kQh+TuHgtlI+zYDTqN1hsqTppza/0KeJd0r+3cTqdzMwOR8jpXuA0IHwt000BJtzuVX01D3zczHNPLX/AC613fvhY5k7PlNO8WDg0SAt4Nezgev5LNy9mqfKH4fVOheSL07yZIy9x0ba+Zm+p8VgFZ4U9jFCtKisNaeKK6toHR+B7SLdOex9rKjxxhc1kTR4dXvdbUHaw62C1lVFidLYTU3fsGxiJmaQOTdHsHoEzDGCeGpkkpTG9vzkbSNQ0NtlFwLm8ZJ89kQjyvJKtcqUceJT4BhM/dvnazU2hgbfXM+13AchprxstfWQRUMWWRtxHG2zWvAzH4Q3nvyUHZ2B5JqJj+6BDRw7x3xW8tG/ydVS41J38zYM1gTmeftZSWjqbf8AcFo1ZqvXUMaLf8wNRcI6nLXVkE+VsMBY8u8bje5ve4vmObU76bLU0tPkaABwWe7O4bI+Yvexwy8C0jxHoVsHx2Flsz3wh03hHI6YN1K7BjboY7NJ7x3tGw/+R/AeapMQfueA/Erlprudc8d1FR6mV+BbxSl2pK74ni1yq5uiSSfgEsCbyUvbPC2yuNTELH+J1toHfkD6dVU9m6fxOc4at0/D+62BOipZ3dyXNjABdqHfUOurQdL8r7flmhUxuatalzLQru0LYmOAGkh1eBwB2LhzPvbU8FUl1xY6p82GS3JaS+5udfGSdyb7n3XK4uabOBB5HQrImpGJJwWGI6iYdrt8j+ikh7OST/u87j/nFXWB0TXgFwDi42HTW1vO/wCYW1JZh8TZSxpe4EQstoXDdz/si404k+anGNWclClrJ/mfRdTFUr0oJueiRnaOqqaVojrmOPKVozacM4Gt+oXQ2uof3neU2h3Lm6HqDx9Fy1WO1Ut+8nc6/OxHsRoqepphIbvsf5Wj8hqrqHDa8f7l7Mr4FG+I0Zf2v24LDGO03e3ipiXE6Ol1AA5NvueuwVfTRZGgJ0UDW7BSKytrZUV5lfc3LrPyBCELZNU2cZXbDJZVzCuiNy88PTGieQrmqZMrXHkCpiVw4i7wO8ihGGRQST+HL1J87gf0S0cvEFcc7rhcrJi0/r/Xksq2MDeuTUw1hbfK57b7ljrX82m7XeoUhr3n4xFLbbMDG8eTgSPwCoIa4cV0fKm/WCTiZY1GXDMUaw5mvqYza1iRI229gdeSrsV7TG3d95JK5zhkZZrczidASBfLt6BVlTUDgdEzAqYGcSu3A8IPAf1UZS5Iub6C0lLCS9TYVThT0zY3G5DS+X7Tjr+JNvVYKZ5cS52pJJPmVe9o8RznIDxu702H6+ypaSnMsjY28Tr0HErBZU3GDlLd6k5vOiNv2PqZRTgl77XOXxHZaBuIOsQ+7gRx1t11VbTsaxjWjYAAei5aqtA32W1lkeReBy9pWZZRC0EAAPP82ygpGWTZ6l8rs7zcnboOCkabBJmSKeNSWR6jYbqJzrqVpUQbJHPVViAu/wBB+q7810sVNmfc9Es41IsdQYcHAAjzWnoMFjLS6UM7tou4vALQBudUtLBFBH39S8MZ9EfSeeTRuSsr2l7TPq/mmN7uEG7WcXEbOeeJ6bD8VtWXDqt7LO0F1+i8/gvgVl/xKFssLWXh9yWoxajMjo46dkUFxkkYwCVrxtLp8Q5s5ddV0ftArI5fk+SSN5DXF+R2YAuLfbY6HVZIlNXWQsKNOpGpBY5U165XXz8+py876rUhKE3nLznwBCELcNQEIQgBEJUqB4NSbtJadCCWuHItNiPcKZj1o+2nZqVsrqqnYXsf4pmNF3MfxeBxadzbUHXY6ZOORcBUg4Swz0elUVSOUdweoKgXBCA9I5YxtGTqoXMJBBtz6LkJWtqIgQQeOix1S0seWHgVlWphccChvK48v6J4idzHt/dMjKma5PVbGLCHNi+sb9Ngn5suo0TM6jcVHGdxrQbM8k3Wi7NUeRneuHidt0aqGlg7x7Wczr5cVsL2Fhw0CctFgzU451J5J1UVs+Y5VNVz5W3PoqeKbM711PVOK6k2WkfNDn8FCZVE6ZRBs6g6yVridlJFR2GaeRsTdwHXLyPsxjxHzNh1SPxiKPSCHMfrza+oiabD1LltUOH3Ff8ARHTxei/f2ZK+44jb0NJyy/Bas7qDDpJPhaSB8TtmjzcdB6qeXFKak+HLUSjkfmmnq/6f8unVZqvxaefSWUuA2bo1g8mNs0ey4rq5t+BU4vNZ83ktI/dlFc8bqTWKS5V47v7I7sVxSapf3kz8x2aNmtH1Wt4BcJKRCvEklhbFK228sEIQgQIQhAAgpCVtuwvYyWeVlRUMLYGkOAcLGQjUAA/Q5njsOkKlSNOPNInSpSqS5Ylb/wCzKz/plC92Qqf/ALGr4Iuf+uo+LBeVduv9WfL9ShCqq/8ATZcWn9VFHHsncEqFWluyCVZvtB+8b91CFOG5hn+k4GKYIQshhFTShCSGjuwL976FaJyEKE9zYhsVWM7N9VX0uzfJKhTWxGW51SKz7Kf6yL736FCEQ/UvVGKp+l+j+TOLtD/qZfvFV6VC7xbI8+fX1Yjk1CEACEIQAIQhAAhCEDZo+wf+rZ5r3ZCFScR/qr0Lzh39F+oIQhaBvH//2Q==">
+    <title>Clash of clans</title>
+</head>
+
+<body style="margin: 0;">
+
+
+    <div class="full__body">
+        <div class="Navigation">
+
+            <div class="nav__left">
+
+
+
+                <p>Other Channels</p>
+
+                <svg viewBox="0 0 87 87" style="vertical-align:middle;" class="icon-facebook">
+                    <path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;"
+                        d="M79.7,0H4.6C2.2,0,0,2.2,0,4.5l0,0v74.9C0,82.1,2.2,84,4.6,84l0,0h40.3V51.5h-11V38.8h11v-9.3c-1-8.4,5.3-15.8,13.7-16.8c1,0,1.7,0,2.6,0c3.4,0,6.5,0.2,9.8,0.5v11.2h-6.7c-5.3,0-6.2,2.6-6.2,6.2v8.1h12.5l-1.7,12.7h-11V84h21.6c2.6,0,4.6-2.2,4.6-4.5l0,0V4.5C84.2,2.2,82.3,0,79.7,0">
+                    </path>
+                </svg>
+
+                <svg viewBox="0 0 87 87" style="vertical-align:middle;" class="icon-instagram">
+                    <path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;"
+                        d="M 86.800781 28.21875 C 86.800781 28.21875 86.582031 24.058594 86.417969 21.976562 C 86.140625 18.40625 85.914062 14.851562 84.574219 11.445312 C 82.203125 5.394531 77.875 1.648438 71.484375 0.609375 C 67.976562 0.0390625 64.363281 -0.00390625 60.777344 0.015625 C 47.421875 0.113281 34.066406 -0.199219 20.714844 0.246094 C 17.925781 0.335938 15.097656 0.320312 12.390625 1.144531 C 4.992188 3.398438 1.6875 8.925781 0.75 16.039062 C 0.121094 20.757812 0.121094 25.546875 0.0664062 30.296875 C -0.0078125 36.210938 0.0664062 42.128906 0.0390625 48.039062 C -0.0078125 54.984375 0.0117188 61.933594 0.496094 68.859375 C 1.214844 79.148438 7.574219 84.8125 17.027344 85.433594 C 20.894531 85.6875 24.777344 85.933594 28.632812 85.917969 C 42.152344 85.847656 55.671875 86.28125 69.195312 85.59375 C 77.488281 85.160156 85.480469 78.464844 86.074219 69.910156 C 86.457031 64.429688 86.605469 58.957031 86.59375 53.46875 L 86.59375 32.480469 L 86.8125 29.273438 C 86.816406 29.210938 86.816406 29.148438 86.8125 29.085938 Z M 43.253906 69.707031 C 32.371094 69.703125 22.566406 63.171875 18.429688 53.175781 C 14.289062 43.175781 16.632812 31.683594 24.359375 24.074219 C 32.089844 16.464844 43.675781 14.238281 53.703125 18.441406 C 63.730469 22.644531 70.214844 32.441406 70.121094 43.25 C 70.097656 57.804688 58.011719 69.703125 43.230469 69.691406 Z M 71.292969 21.445312 C 67.824219 21.386719 65.035156 18.59375 65.011719 15.148438 C 65.035156 12.921875 66.253906 10.878906 68.207031 9.789062 C 70.160156 8.699219 72.546875 8.726562 74.476562 9.859375 C 76.402344 10.996094 77.574219 13.066406 77.546875 15.289062 C 77.511719 18.527344 74.566406 21.421875 71.292969 21.445312 Z M 71.292969 21.445312 ">
+                    </path>
+                    <path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;"
+                        d="M 60.640625 43.039062 C 60.640625 53.269531 53.417969 60.503906 43.238281 60.492188 C 33.058594 60.484375 25.839844 53.21875 25.839844 43.015625 C 25.839844 32.8125 32.980469 25.640625 43.261719 25.652344 C 53.539062 25.667969 60.652344 32.78125 60.640625 43.039062 Z M 60.640625 43.039062 ">
+                    </path>
+                </svg>
+
+                <svg viewBox="0 0 87 87" style="vertical-align:middle;" class="icon-youtube">
+                    <path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;"
+                        d="M82.3,21.9c-1-3.6-3.8-6.3-7.2-7.2c-10.8-1.2-21.9-1.9-33-1.7C31,12.8,20,13.3,9.1,14.5c-3.6,1-6.3,3.8-7.2,7.2C0.7,28.4,0,35.2,0,41.9s0.5,13.5,1.9,20.2c1,3.6,3.8,6.3,7.2,7.2C20,70.5,31,71.2,42.1,71c11.1,0.2,21.9-0.5,33-1.7c3.6-1,6.3-3.8,7.2-7.2c1.2-6.7,1.7-13.5,1.7-20.2C84.2,35.4,83.5,28.7,82.3,21.9L82.3,21.9z M33.7,54.9V29.6l21.9,12.5L33.7,54.9z">
+                    </path>
+                </svg>
+
+                <svg viewBox="0 0 87 87" style="vertical-align:middle;" class="icon-twitch">
+                    <path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;"
+                        d="M7.1,0L1.8,14.6v58.6H22V84h11l11-11h16.3l21.8-21.8V0H7.1z M14.5,7.2h60.2v40.1L62,60H41.9l-11,11V60H14.5V7.2z">
+                    </path>
+                    <path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;"
+                        d="M34.7,43.9h7.2V21.8h-7.2V43.9z M54.6,43.9h7.2V21.8h-7.2V43.9z"></path>
+                </svg>
+
+                <svg viewBox="0 0 87 87" style="vertical-align:middle;" class="icon-wikia">
+                    <path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;"
+                        d="M31.7 64.2c-1.6 0-2.9 1.3-2.9 2.9s1.3 2.9 2.9 2.9c1.6 0 2.9-1.3 2.9-2.9s-1.3-2.9-2.9-2.9zM62.9 64.2c1.6 0 2.9 1.3 2.9 2.9S64.5 70 62.9 70 60 68.7 60 67.1s1.3-2.9 2.9-2.9zM39.6 86.6V64.1h5.1v12.6l1.3-1.6 2.9-3.4h7.2l-6 5.9 6.4 9h-6.6l-3.5-5.7-1.7 1.7v4zM20.9 71.7l-1.8 10.2-2.5-10.2h-5.9L8.3 81.9 6.4 71.7H1.1L5 86.6h6.7l1.9-7.8 2 7.8h6.7l3.9-14.9zM84.2 76l.3-4.3h-4.6l-.3 1.6c-1.1-1.1-2.4-2.1-4.7-2.1-4.2 0-6.5 2.7-6.5 7.9s2.3 7.9 6.5 7.9c2.3 0 3.7-.9 4.7-2l.3 1.6h4.6l-.3-4.3V76zm-5 5c-.6.8-1.7 1.4-3 1.4-1.5 0-2.7-1-2.7-3.3s1.2-3.3 2.7-3.3c1.3 0 2.3.6 3 1.4V81zM36 74.8v-3.2h-7.2V86.7H36v-3.2h-2.3v-8.7zM58.5 74.8v-3.2h7.3V86.7h-7.3v-3.2h2.3v-8.7z">
+                    </path>
+                    <path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;"
+                        d="M29.3 12.3V0H1.1v58.5h28.2V46.2h-8.8V12.3zM56.3 12.3V0h28.2v58.5H56.3V46.2h8.8V12.3z"></path>
+                </svg>
+
+                <svg viewBox="0 0 87 87" style="vertical-align:middle;" class="icon-twitter">
+                    <path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;"
+                        d="M84,16.1c-3.2,1.4-6.5,2.3-10,2.8c3.7-2.1,6.2-5.6,7.6-9.5c-3.5,2.1-7.2,3.5-10.9,4.2c-6.5-6.9-17.4-7.4-24.3-0.9c-3.7,3.2-5.6,7.6-5.6,12.5c0,1.4,0.2,2.5,0.5,3.9c-13.9-0.7-26.8-7.2-35.6-18c-1.6,2.5-2.3,5.6-2.3,8.6c0,5.8,2.8,11.1,7.6,14.3c-2.8,0-5.3-0.9-7.9-2.1V32c0,8.1,5.8,15.3,13.9,16.9c-2.5,0.7-5.1,0.7-7.9,0.2c2.3,6.9,8.8,11.8,16.2,12c-6,4.9-13.7,7.4-21.3,7.4c-1.4,0-2.8,0-4.2-0.2C7.9,73.4,17.1,76,26.6,76c26.8,0.5,48.8-21.3,49.1-48.1c0-0.2,0-0.5,0-0.7c0-0.7,0-1.4,0-2.3C78.9,22.5,81.9,19.5,84,16.1L84,16.1L84,16.1z">
+                    </path>
+                </svg>
+
+                <svg viewBox="0 0 87 87" style="vertical-align:middle;" class="icon-reddit">
+                    <path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;"
+                        d="M49.9,53.8c0.2,0.2,0.2,0.7,0,1c-1.7,1.7-4.1,2.4-7.9,2.4l0,0l0,0c-3.6,0-6.2-0.7-7.9-2.4c-0.2-0.2-0.2-0.7,0-1c0.2-0.2,0.7-0.2,1,0c1.4,1.2,3.6,1.9,6.7,1.9l0,0l0,0c3.1,0,5.5-0.7,6.7-1.9C49,53.5,49.4,53.5,49.9,53.8z M37.7,45.4c0-1.7-1.4-3.1-3.1-3.1c-1.7,0-3.1,1.4-3.1,3.1s1.4,3.1,3.1,3.1C36.2,48.5,37.7,47,37.7,45.4z M84,42c0,23.3-18.7,42-42,42S0,65.3,0,42S18.7,0,42,0S84,18.7,84,42z M66.5,41.5c0-2.9-2.4-5.5-5.5-5.5c-1.4,0-2.9,0.5-3.8,1.4c-3.6-2.4-8.6-4.1-14.2-4.1l3.1-9.6l8.2,1.9l0,0c0,2.4,1.9,4.3,4.3,4.3c2.4,0,4.3-1.9,4.3-4.3s-1.7-4.1-4.1-4.1c-1.9,0-3.4,1.2-4.1,2.9l-8.9-2.2c-0.5,0-0.7,0.2-1,0.5l-3.4,10.6c-5.8,0-11,1.7-14.9,4.1c-1-1-2.2-1.4-3.6-1.4c-2.9,0-5.5,2.4-5.5,5.5c0,1.9,1.2,3.6,2.6,4.6c0,0.5-0.2,1.2-0.2,1.7c0,7.9,9.8,14.4,21.8,14.4s21.8-6.5,21.8-14.4c0-0.5,0-1.2-0.2-1.7C65.3,45.4,66.5,43.7,66.5,41.5z M49.4,42c-1.7,0-3.1,1.4-3.1,3.1c0,1.7,1.4,3.1,3.1,3.1s3.1-1.4,3.1-3.1S51.1,42,49.4,42z">
+                    </path>
+                </svg>
+
+            </div>
+
+            <div class="image__logo">
+
+                <img src="https://clashofclans.com/uploaded-images-blog/_232x109_crop_center-center_90/1779622587_1641980234.png?mtime=20220112093714"
+                    alt="">
+            </div>
+
+
+            <div class="nav__right">
+
+                <div class="Languagebar-arrow-left">
+                    <svg style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;"
+                        viewBox="0 0 23 24" class="icon-arrow" width="9px" height="9px">
+                        <g>
+                            <path d="M18.8,10.1L9.3,0.8c-1.1-1.1-2.8-1.1-3.9,0c-1.1,1.1-1.1,2.8,0,3.8l7.6,7.4l-7.6,7.4
+            c-1.1,1.1-1.1,2.8,0,3.8c1.1,1.1,2.8,1.1,3.9,0l9.5-9.3C19.9,12.9,19.9,11.2,18.8,10.1z"></path>
+                        </g>
+                    </svg>
+                </div>
+
+                <h6>English</h6>
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+        <div class="banner__image"></div>
+
+
+        <div class="site__body">
+
+
+            <div class="body__content">
+
+
+
+                <div class="body__image">
+
+
+                    <img src="https://clashofclans.com/uploaded-images-blog/_524x294_crop_center-center_90/1464238697_1662036332.jpg?mtime=20220901124530"
+                        alt="">
+
+
+                </div>
+
+                <div class="content">
+
+                    <p class="p__news">News, Sep 10, 2022</p>
+
+                    <h2> <a href="https://clashofclans.com/blog/news/less-is-more-leaderboards.html" target="_self"
+                            class="js-click" data-category="Home"
+                            data-label="Main - Title - Less Is More Challenge Leaderboards"
+                            title="Less%20Is%20More%20Challenge%20Leaderboards">Less Is More CHallenge Leaderboards</a>
+                    </h2>
+                    <p class="para">Welcome to the Clash Fest "Less is More" Challenge Level Leaderboards! This blog
+                        post will be updated with the daily top scores and after the Challenge Level event is over,
+                        there will be a raffle among the top 100 performers for some sweet Clash...</p>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="imagewith__contents">
+
+                <div class="image__row1">
+
+                    <div class="column1">
+
+                        <div class="image1">
+
+                            <img src="https://clashofclans.com/uploaded-images-blog/_393x240_crop_center-center_90/1464238697_1662036332.jpg?mtime=20220901124530"
+                                alt="">
+
+                        </div>
+                        <div class="news">
+                            <h6>News, Sep 5, 2022</h6>
+                        </div>
+
+                        <div class="contents">
+
+                            <a href="">GOBLIN MAZE CHALLENGE LEADERBOARDS</a>
+
+                            <p>Welcome to the Clash Fest "Goblin Maze" Challenge Level Leaderboard! This blog post will
+                                be updated ...</p>
+                        </div>
+                    </div>
+
+
+                    <div class="column2">
+                        <div class="image1">
+
+                            <img src="https://clashofclans.com/uploaded-images-blog/_393x240_crop_center-center_90/12284530_1661867476.png?mtime=20220830135115"
+                                alt="">
+                        </div>
+
+                        <div class="news">
+                            <h6>News, Sep 1, 2022</h6>
+                        </div>
+
+                        <div class="contents">
+
+                            <a href="">WELCOME TO CLASH FEST!</a>
+
+                            <p>Clash Fest is a full month-long Clash celebration that will feature unique in-game and
+                                out-of-game e...
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="column3">
+                        <div class="image1">
+
+                            <img src="https://clashofclans.com/uploaded-images-blog/_393x240_crop_center-center_90/1702295275_1657292784.png?mtime=20220708150623"
+                                alt="">
+
+
+                        </div>
+
+                        <div class="news1">
+                            <h6>Clash Worlds, Jul 9, 2022</h6>
+                        </div>
+
+
+                        <div class="contents">
+
+                            <a href="">GET READY FOR CLASH WORLDS 2022!</a>
+
+                            <p>The Clash of Clans World Championship is back in 2022 and better than ever! Whether
+                                you’ve just re...
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+                <div class="image__row2">
+
+
+                    <div class="column4">
+
+                        <div class="image2">
+
+                            <img src="https://clashofclans.com/uploaded-images-blog/_393x240_crop_center-center_90/1564830591_1651478038.png?mtime=20220502075357"
+                                alt="">
+                        </div>
+
+                        <div class="news2">
+                            <h6>Release Notes, Jun 30, 2022</h6>
+                        </div>
+
+                        <div class="contents">
+
+                            <a href="">CLAN CAPITAL BALANCE CHANGES</a>
+
+                            <p>We have deployed a couple of Clan Capital balance changes today in a maintenance break.
+                                This is th...
+
+                            </p>
+                        </div>
+
+
+                    </div>
+
+                    <div class="column5">
+
+                        <div class="image2">
+                            <img src="https://clashofclans.com/uploaded-images-blog/_393x240_crop_center-center_90/barbarian-thumbnail.png?mtime=20210224142929"
+                                alt="">
+
+                        </div>
+
+                        <div class="news2">
+                            <h6>Release Notes, Jun 28, 2022</h6>
+                        </div>
+
+
+                        <div class="contents">
+
+                            <a href="">NEW OPTIONAL UPDATE</a>
+
+                            <p>Hey Chiefs! We have a new optional update rolling out to the app stores, and it includes
+                                the followi...
+
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="column6">
+
+                        <div class="image2">
+
+                            <img src="https://clashofclans.com/uploaded-images-blog/_393x240_crop_center-center_90/1374871602_1655999994.png?mtime=20220623155953"
+                                alt="">
+
+
+                        </div>
+
+                        <div class="news">
+                            <h6>News, Jun 26, 2022</h6>
+                        </div>
+
+                        <div class="contents">
+
+                            <a href="">HOME VILLAGE CHANGES</a>
+
+                            <p>The Home Village is at the core of Clash of Clans and our goal is to continue to make
+                                every facet of...
+
+                            </p>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+
+            <div class="button">
+
+                <button>VIEW ALL</button>
+            </div>
+
+
+            <div class="footer">
+
+
+                <div class="footer__top">
+
+                    <div class="footertop__left">
+                        <a href="">Support</a>
+                        <a href="">Parent's Guid</a>
+                        <a href="">Terms of Service</a>
+                        <a href="">Privacy Policy</a>
+                    </div>
+                    <div class="footertop__right">
+
+                        <a href=""> <img
+                                src="https://clashofclans.com/uploaded-images-blog/en_apple.png?mtime=20180926175652"
+                                alt=""></a>
+                        <a href=""> <img
+                                src="https://clashofclans.com/uploaded-images-blog/en_google.png?mtime=20180926175722"
+                                alt=""></a>
+                    </div>
+
+
+
+                </div>
+
+
+                <div class="footer__hr"></div>
+
+                <div class="footer__bottom">
+
+
+                    <div class="footerbottom__left">
+
+                        <a href="">Supercell</a>
+                        <a href="">Fan content policy</a>
+                    </div>
+
+                    <div class="footerbottom__right">
+
+
+                        <svg viewBox="0 0 87 87" style="vertical-align:middle;" class="icon-facebook">
+                            <path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;"
+                                d="M79.7,0H4.6C2.2,0,0,2.2,0,4.5l0,0v74.9C0,82.1,2.2,84,4.6,84l0,0h40.3V51.5h-11V38.8h11v-9.3c-1-8.4,5.3-15.8,13.7-16.8c1,0,1.7,0,2.6,0c3.4,0,6.5,0.2,9.8,0.5v11.2h-6.7c-5.3,0-6.2,2.6-6.2,6.2v8.1h12.5l-1.7,12.7h-11V84h21.6c2.6,0,4.6-2.2,4.6-4.5l0,0V4.5C84.2,2.2,82.3,0,79.7,0">
+                            </path>
+                        </svg>
+
+                        <svg viewBox="0 0 87 87" style="vertical-align:middle;" class="icon-instagram">
+                            <path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;"
+                                d="M 86.800781 28.21875 C 86.800781 28.21875 86.582031 24.058594 86.417969 21.976562 C 86.140625 18.40625 85.914062 14.851562 84.574219 11.445312 C 82.203125 5.394531 77.875 1.648438 71.484375 0.609375 C 67.976562 0.0390625 64.363281 -0.00390625 60.777344 0.015625 C 47.421875 0.113281 34.066406 -0.199219 20.714844 0.246094 C 17.925781 0.335938 15.097656 0.320312 12.390625 1.144531 C 4.992188 3.398438 1.6875 8.925781 0.75 16.039062 C 0.121094 20.757812 0.121094 25.546875 0.0664062 30.296875 C -0.0078125 36.210938 0.0664062 42.128906 0.0390625 48.039062 C -0.0078125 54.984375 0.0117188 61.933594 0.496094 68.859375 C 1.214844 79.148438 7.574219 84.8125 17.027344 85.433594 C 20.894531 85.6875 24.777344 85.933594 28.632812 85.917969 C 42.152344 85.847656 55.671875 86.28125 69.195312 85.59375 C 77.488281 85.160156 85.480469 78.464844 86.074219 69.910156 C 86.457031 64.429688 86.605469 58.957031 86.59375 53.46875 L 86.59375 32.480469 L 86.8125 29.273438 C 86.816406 29.210938 86.816406 29.148438 86.8125 29.085938 Z M 43.253906 69.707031 C 32.371094 69.703125 22.566406 63.171875 18.429688 53.175781 C 14.289062 43.175781 16.632812 31.683594 24.359375 24.074219 C 32.089844 16.464844 43.675781 14.238281 53.703125 18.441406 C 63.730469 22.644531 70.214844 32.441406 70.121094 43.25 C 70.097656 57.804688 58.011719 69.703125 43.230469 69.691406 Z M 71.292969 21.445312 C 67.824219 21.386719 65.035156 18.59375 65.011719 15.148438 C 65.035156 12.921875 66.253906 10.878906 68.207031 9.789062 C 70.160156 8.699219 72.546875 8.726562 74.476562 9.859375 C 76.402344 10.996094 77.574219 13.066406 77.546875 15.289062 C 77.511719 18.527344 74.566406 21.421875 71.292969 21.445312 Z M 71.292969 21.445312 ">
+                            </path>
+                            <path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;"
+                                d="M 60.640625 43.039062 C 60.640625 53.269531 53.417969 60.503906 43.238281 60.492188 C 33.058594 60.484375 25.839844 53.21875 25.839844 43.015625 C 25.839844 32.8125 32.980469 25.640625 43.261719 25.652344 C 53.539062 25.667969 60.652344 32.78125 60.640625 43.039062 Z M 60.640625 43.039062 ">
+                            </path>
+                        </svg>
+
+                        <svg viewBox="0 0 87 87" style="vertical-align:middle;" class="icon-youtube">
+                            <path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;"
+                                d="M82.3,21.9c-1-3.6-3.8-6.3-7.2-7.2c-10.8-1.2-21.9-1.9-33-1.7C31,12.8,20,13.3,9.1,14.5c-3.6,1-6.3,3.8-7.2,7.2C0.7,28.4,0,35.2,0,41.9s0.5,13.5,1.9,20.2c1,3.6,3.8,6.3,7.2,7.2C20,70.5,31,71.2,42.1,71c11.1,0.2,21.9-0.5,33-1.7c3.6-1,6.3-3.8,7.2-7.2c1.2-6.7,1.7-13.5,1.7-20.2C84.2,35.4,83.5,28.7,82.3,21.9L82.3,21.9z M33.7,54.9V29.6l21.9,12.5L33.7,54.9z">
+                            </path>
+                        </svg>
+
+                        <svg viewBox="0 0 87 87" style="vertical-align:middle;" class="icon-twitch">
+                            <path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;"
+                                d="M7.1,0L1.8,14.6v58.6H22V84h11l11-11h16.3l21.8-21.8V0H7.1z M14.5,7.2h60.2v40.1L62,60H41.9l-11,11V60H14.5V7.2z">
+                            </path>
+                            <path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;"
+                                d="M34.7,43.9h7.2V21.8h-7.2V43.9z M54.6,43.9h7.2V21.8h-7.2V43.9z"></path>
+                        </svg>
+
+                        <svg viewBox="0 0 87 87" style="vertical-align:middle;" class="icon-wikia">
+                            <path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;"
+                                d="M31.7 64.2c-1.6 0-2.9 1.3-2.9 2.9s1.3 2.9 2.9 2.9c1.6 0 2.9-1.3 2.9-2.9s-1.3-2.9-2.9-2.9zM62.9 64.2c1.6 0 2.9 1.3 2.9 2.9S64.5 70 62.9 70 60 68.7 60 67.1s1.3-2.9 2.9-2.9zM39.6 86.6V64.1h5.1v12.6l1.3-1.6 2.9-3.4h7.2l-6 5.9 6.4 9h-6.6l-3.5-5.7-1.7 1.7v4zM20.9 71.7l-1.8 10.2-2.5-10.2h-5.9L8.3 81.9 6.4 71.7H1.1L5 86.6h6.7l1.9-7.8 2 7.8h6.7l3.9-14.9zM84.2 76l.3-4.3h-4.6l-.3 1.6c-1.1-1.1-2.4-2.1-4.7-2.1-4.2 0-6.5 2.7-6.5 7.9s2.3 7.9 6.5 7.9c2.3 0 3.7-.9 4.7-2l.3 1.6h4.6l-.3-4.3V76zm-5 5c-.6.8-1.7 1.4-3 1.4-1.5 0-2.7-1-2.7-3.3s1.2-3.3 2.7-3.3c1.3 0 2.3.6 3 1.4V81zM36 74.8v-3.2h-7.2V86.7H36v-3.2h-2.3v-8.7zM58.5 74.8v-3.2h7.3V86.7h-7.3v-3.2h2.3v-8.7z">
+                            </path>
+                            <path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;"
+                                d="M29.3 12.3V0H1.1v58.5h28.2V46.2h-8.8V12.3zM56.3 12.3V0h28.2v58.5H56.3V46.2h8.8V12.3z">
+                            </path>
+                        </svg>
+
+                        <svg viewBox="0 0 87 87" style="vertical-align:middle;" class="icon-twitter">
+                            <path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;"
+                                d="M84,16.1c-3.2,1.4-6.5,2.3-10,2.8c3.7-2.1,6.2-5.6,7.6-9.5c-3.5,2.1-7.2,3.5-10.9,4.2c-6.5-6.9-17.4-7.4-24.3-0.9c-3.7,3.2-5.6,7.6-5.6,12.5c0,1.4,0.2,2.5,0.5,3.9c-13.9-0.7-26.8-7.2-35.6-18c-1.6,2.5-2.3,5.6-2.3,8.6c0,5.8,2.8,11.1,7.6,14.3c-2.8,0-5.3-0.9-7.9-2.1V32c0,8.1,5.8,15.3,13.9,16.9c-2.5,0.7-5.1,0.7-7.9,0.2c2.3,6.9,8.8,11.8,16.2,12c-6,4.9-13.7,7.4-21.3,7.4c-1.4,0-2.8,0-4.2-0.2C7.9,73.4,17.1,76,26.6,76c26.8,0.5,48.8-21.3,49.1-48.1c0-0.2,0-0.5,0-0.7c0-0.7,0-1.4,0-2.3C78.9,22.5,81.9,19.5,84,16.1L84,16.1L84,16.1z">
+                            </path>
+                        </svg>
+
+                        <svg viewBox="0 0 87 87" style="vertical-align:middle;" class="icon-reddit">
+                            <path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;"
+                                d="M49.9,53.8c0.2,0.2,0.2,0.7,0,1c-1.7,1.7-4.1,2.4-7.9,2.4l0,0l0,0c-3.6,0-6.2-0.7-7.9-2.4c-0.2-0.2-0.2-0.7,0-1c0.2-0.2,0.7-0.2,1,0c1.4,1.2,3.6,1.9,6.7,1.9l0,0l0,0c3.1,0,5.5-0.7,6.7-1.9C49,53.5,49.4,53.5,49.9,53.8z M37.7,45.4c0-1.7-1.4-3.1-3.1-3.1c-1.7,0-3.1,1.4-3.1,3.1s1.4,3.1,3.1,3.1C36.2,48.5,37.7,47,37.7,45.4z M84,42c0,23.3-18.7,42-42,42S0,65.3,0,42S18.7,0,42,0S84,18.7,84,42z M66.5,41.5c0-2.9-2.4-5.5-5.5-5.5c-1.4,0-2.9,0.5-3.8,1.4c-3.6-2.4-8.6-4.1-14.2-4.1l3.1-9.6l8.2,1.9l0,0c0,2.4,1.9,4.3,4.3,4.3c2.4,0,4.3-1.9,4.3-4.3s-1.7-4.1-4.1-4.1c-1.9,0-3.4,1.2-4.1,2.9l-8.9-2.2c-0.5,0-0.7,0.2-1,0.5l-3.4,10.6c-5.8,0-11,1.7-14.9,4.1c-1-1-2.2-1.4-3.6-1.4c-2.9,0-5.5,2.4-5.5,5.5c0,1.9,1.2,3.6,2.6,4.6c0,0.5-0.2,1.2-0.2,1.7c0,7.9,9.8,14.4,21.8,14.4s21.8-6.5,21.8-14.4c0-0.5,0-1.2-0.2-1.7C65.3,45.4,66.5,43.7,66.5,41.5z M49.4,42c-1.7,0-3.1,1.4-3.1,3.1c0,1.7,1.4,3.1,3.1,3.1s3.1-1.4,3.1-3.1S51.1,42,49.4,42z">
+                            </path>
+                        </svg>
+
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>
